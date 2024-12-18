@@ -1,0 +1,16 @@
+
+=== creating new laravel project
+composer create-project laravel/laravel .
+
+
+=== creating new react project
+npm create vite@latest
+
+
+=== creating new react expo project
+npx create-expo-app@latest --template
+
+npm install --save-dev vite   // run this if error found when running for the first time
+touch .gitignore   // adding gitignore
+
+git add Mobile/app.json
