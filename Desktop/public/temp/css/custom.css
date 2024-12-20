@@ -23,4 +23,40 @@
     }
   }
   
+  .logo-annex {
+    display: inline-block;
+    margin-top: 2px;
+    background: #262626;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 #4e4e4e;
+    -webkit-box-shadow: 0 1px 0 #4e4e4e;
+    -moz-box-shadow: 0 1px 0 #4e4e4e;
+    width: 40px !important;
+    height: 40px;
+  }
 
+
+  .logo-annex img {
+    width: 30px !important;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+
+  .appTitle-background {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    background: #262626;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 #4e4e4e;
+    -webkit-box-shadow: 0 1px 0 #4e4e4e;
+    -moz-box-shadow: 0 1px 0 #4e4e4e;
+    width: 111px !important;
+    height: 25px;
+  }

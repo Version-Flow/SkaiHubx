@@ -2,6 +2,8 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import SalesAgent from './breadcrumbs/SalesAgent';
+import Admin from './breadcrumbs/Admin';
 
 const Breadcrumb = ({ items }) => {
 
@@ -11,6 +13,19 @@ const Breadcrumb = ({ items }) => {
   // Get the last part of the path
   const lastPart = pathName.substring(pathName.lastIndexOf('/') + 1) || 'Dashboard';
 
+  // Simulate role from session
+  const userRole = sessionStorage.getItem('role') || 'SalesAgent';
+
+  const renderControls = () => {
+    switch (userRole) {
+      case 'SalesAgent':
+        return <SalesAgent />;
+      case 'Admin':
+        return <Admin />;
+      default:
+        return <SalesAgent />;
+    }
+  };
 
   return (
     <>
@@ -25,27 +40,12 @@ const Breadcrumb = ({ items }) => {
               </li>
             ))
             }
-            <li className="current"><a href={pathName} title>{lastPart.charAt(0).toUpperCase() + lastPart.slice(1)}</a></li>
+            <li className="current"><a href={pathName} >{lastPart.charAt(0).toUpperCase() + lastPart.slice(1)}</a></li>
           </ul>
         </div>
-        <div className="breadLinks">
-          <ul>
-            <li><a href="#" title><i className="icos-list" /><span>Orders</span> <strong>(+58)</strong></a></li>
-            <li><a href="#" title><i className="icos-check" /><span>Tasks</span> <strong>(+12)</strong></a></li>
-            <li className="has">
-              <a title>
-                <i className="icos-money3" />
-                <span>Invoices</span>
-                <span><img src="/temp/images/elements/control/hasddArrow.png" alt /></span>
-              </a>
-              <ul>
-                <li><a href="#" title><span className="icos-add" />New invoice</a></li>
-                <li><a href="#" title><span className="icos-archive" />History</a></li>
-                <li><a href="#" title><span className="icos-printer" />Print invoices</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+
+        {renderControls()}
+
       </div>
 
 

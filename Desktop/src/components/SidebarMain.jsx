@@ -1,15 +1,43 @@
 import React from 'react';
+import SalesAgent from './sidebarmain/SalesAgent';
+import Manager from './sidebarmain/Manager';
+import Admin from './sidebarmain/Admin';
+import Accountant from './sidebarmain/Accountant';
+import HR from './sidebarmain/HR';
+import SkaiTeam from './sidebarmain/SkaiTeam';
 
 
 const SidebarMain = () => {
+
+  // Simulate role from session
+  const userRole = sessionStorage.getItem('role') || 'SalesAgent';
+
+  const renderSidebar = () => {
+    switch (userRole) {
+      case 'SalesAgent':
+        return <SalesAgent />;
+      case 'Manager':
+        return <Manager />;
+      case 'Admin':
+        return <Admin />;
+      case 'Accountant':
+        return <Accountant />;
+      case 'HR':
+        return <HR />;
+      case 'SkaiTeam':
+        return <SkaiTeam />;
+      default:
+        return <SalesAgent />;
+    }
+  };
 
   return (
     <>
       <div className="mainNav">
         <div className="user">
-          <a title className="leftUserDrop">
-            <img src="/temp/images/user.png" alt />
-            <span><strong>3</strong></span>
+          <a href='/account/profile' title="View Profile" className="leftUserDrop">
+            <img src="/temp/images/user.png" width={80}/>
+            <span title="Role here"><strong>R</strong></span>
           </a>
           <span>Eugene</span>
         </div>
@@ -29,51 +57,11 @@ const SidebarMain = () => {
             <li><a href="#" className="logout" /></li>
           </ul>
         </div>
+
         {/* Main nav */}
-        <ul className="nav">
-          <li>
-            <a href="index.html" title className="active">
-              <img src="/temp/images/icons/mainnav/dashboard.png" alt />
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="ui.html" >
-              <img src="/temp/images/icons/mainnav/ui.png" alt />
-              <span>UI elements</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms.html" >
-              <img src="/temp/images/icons/mainnav/forms.png" alt />
-              <span>Forms stuff</span>
-            </a>
-          </li>
-          <li>
-            <a href="messages.html" >
-              <img src="/temp/images/icons/mainnav/messages.png" alt />
-              <span>Messages</span>
-            </a>
-          </li>
-          <li>
-            <a href="statistics.html" >
-              <img src="/temp/images/icons/mainnav/statistics.png" alt />
-              <span>Statistics</span>
-            </a>
-          </li>
-          <li>
-            <a href="tables.html" >
-              <img src="/temp/images/icons/mainnav/tables.png" alt />
-              <span>Tables</span>
-            </a>
-          </li>
-          <li>
-            <a href="other_calendar.html" >
-              <img src="/temp/images/icons/mainnav/other.png" alt />
-              <span>Other pages</span>
-            </a>
-          </li>
-        </ul>
+
+        {renderSidebar()}
+
       </div>
     </>
   );

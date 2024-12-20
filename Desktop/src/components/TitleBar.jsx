@@ -7,19 +7,18 @@ const TitleBar = () => {
     
       <div id="top">
         <div className="wrapper">
-          <a href="index.html" title className="logo"><img src="/vite.svg" alt /></a>
-          <span className="appTitle">{Config[0].APP_ALLIASE}</span>
+          <a href="index.html"  className="logo logo-annex"><img src="/temp/images/logo.jpg" /></a>
+          <div className='appTitle-background'><span className="appTitle">{Config[0].APP_ALLIASE}</span></div>
           {/* Right top nav */}
           <div className="topNav">
             <ul className="userNav">
-              <li><a title className="search" /></li>
-              <li><a href="#" title className="screen" /></li>
-              <li><a href="#" title className="settings" /></li>
-              <li><a href="#" title className="logout" /></li>
-              <li className="showTabletP"><a href="#" title className="sidebar" /></li>
+              <li><a  className="search" /></li>
+              <li><a href="#" title='Lock Screen for a while' className="screen" /></li>
+              <li><a href="#" title='Log out'  className="logout" /></li>
+              <li className="showTabletP"><a href="#"  className="sidebar" /></li>
             </ul>
-            <a title className="iButton" />
-            {/* <a title className="iTop" /> */}
+            <a  className="iButton" />
+            {/* <a  className="iTop" /> */}
             <div className="topSearch">
               <div className="topDropArrow" />
               <form action="#">
@@ -31,8 +30,8 @@ const TitleBar = () => {
 
           {/* Responsive nav */} 
           <ul className="altMenu">
-            <li><a href="index.html" title>Dashboard</a></li>
-            <li><a href="ui.html" title className="exp" id="current">UI elements</a>
+            <li><a href="index.html" >Dashboard</a></li>
+            <li><a href="ui.html"  className="exp" id="current">UI elements</a>
               <ul>
                 <li><a href="ui.html">General elements</a></li>
                 <li><a href="ui_icons.html">Icons</a></li>
@@ -41,7 +40,7 @@ const TitleBar = () => {
                 <li><a href="ui_custom.html">Custom elements</a></li>
               </ul>
             </li>
-            <li><a href="forms.html" title className="exp">Forms stuff</a>
+            <li><a href="forms.html"  className="exp">Forms stuff</a>
               <ul>
                 <li><a href="forms.html">Inputs &amp; elements</a></li>
                 <li><a href="form_validation.html">Validation</a></li>
@@ -49,9 +48,9 @@ const TitleBar = () => {
                 <li><a href="form_wizards.html">Form wizards</a></li>
               </ul>
             </li>
-            <li><a href="messages.html" title>Messages</a></li>
-            <li><a href="statistics.html" title>Statistics</a></li>
-            <li><a href="tables.html" title className="exp">Tables</a>
+            <li><a href="messages.html" >Messages</a></li>
+            <li><a href="statistics.html" >Statistics</a></li>
+            <li><a href="tables.html"  className="exp">Tables</a>
               <ul>
                 <li><a href="tables.html">Standard tables</a></li>
                 <li><a href="tables_dynamic.html">Dynamic tables</a></li>
@@ -59,7 +58,7 @@ const TitleBar = () => {
                 <li><a href="tables_sortable.html">Sortable &amp; resizable</a></li>
               </ul>
             </li>
-            <li><a href="other_calendar.html" title className="exp">Other pages</a>
+            <li><a href="other_calendar.html"  className="exp">Other pages</a>
               <ul>
                 <li><a href="other_calendar.html">Calendar</a></li>
                 <li><a href="other_gallery.html">Images gallery</a></li>
