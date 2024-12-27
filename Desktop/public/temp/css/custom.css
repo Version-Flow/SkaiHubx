@@ -1,5 +1,5 @@
 
-  .container {
+  .containers {
     /* max-width: 1400px; */
     margin: 0 auto;
     display: flex;
@@ -10,18 +10,12 @@
   }
 
   @media (max-width: 768px) {
-    .container {
+    .containers {
       /* Less padding on smaller screens */
       padding: 0 10px; 
     }
   }
   
-  @media (min-width: 1400px) {
-    .container {
-      /* Larger width for big screens */
-      /* max-width: 1340px;  */
-    }
-  }
   
   .logo-annex {
     display: inline-block;
@@ -45,7 +39,6 @@
     margin-top: 5px;
   }
 
-
   .appTitle-background {
     display: inline-block;
     margin-top: 10px;
@@ -59,4 +52,56 @@
     -moz-box-shadow: 0 1px 0 #4e4e4e;
     width: 111px !important;
     height: 25px;
+  }
+
+  .appTitle {
+    display: block;
+    float: left;
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 10px 5px !important;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background: linear-gradient(to bottom, #001f3d, #6495ed); */
+    background-clip: text; 
+    -webkit-background-clip: text;
+    text-shadow: 
+      1px 1px 2px rgba(0, 0, 0, 0.8), 
+      -1px -1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+
+  .pageTitle {
+    display: block;
+    float: left;
+    color: #626262;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 21px 30px 21px 0;
+    text-transform: uppercase;
+  }
+
+  .circle-button-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+  }
+  .circle-button-i {
+    color: grey;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .vs-top {
+    margin-bottom: -15px !important;
+  }
+
+  .modal-body .formRow {
+    margin-top: -25px !important;
+  }
+  
+  .modal-header button {
+    font-size: 14px !important;
   }

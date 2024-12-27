@@ -10,6 +10,9 @@ import Profile from './pages/shared/Profile';
 // Sales person routes
 import SalesDashboard from './pages/sales/Dashboard';
 import SalesSettings from './pages/sales/Settings';
+import SalesForum from './pages/sales/Forum';
+import SalesPage from './pages/sales/SalesPage';
+import StatisitcsDashboard from "./pages/sales/StatisitcsDashboard";
 
 
 
@@ -30,6 +33,9 @@ const App = () => {
         <Route path="/sales-agent">
           <Route path="dashboard" element={<SalesDashboard />} />
           <Route path="settings" element={<SalesSettings />} />
+          <Route path="forum" element={<SalesForum />} />
+          <Route path="statistics" element={<StatisitcsDashboard />} />
+          <Route path="home" element={<SalesPage />} />
         </Route>
 
         {/* Account routes */}

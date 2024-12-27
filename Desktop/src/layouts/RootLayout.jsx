@@ -18,7 +18,7 @@ const RootLayout = () => {
   return (
     <>
 
-      <div className="container">
+      <div className="containers">
 
         {/* Tttlebar here */}
         <TitleBar />

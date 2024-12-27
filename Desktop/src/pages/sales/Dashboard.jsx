@@ -26,11 +26,11 @@ const Dashboard = () => {
 
       <div className="wrapper">
         <ul className="middleNavR">
-          <li><a href="#" title="Add an article" className="tipN"><img src="/temp/images/icons/middlenav/create.png" alt /></a></li>
-          <li><a href="#" title="Upload files" className="tipN"><img src="/temp/images/icons/middlenav/upload.png" alt /></a></li>
-          <li><a href="#" title="Add something" className="tipN"><img src="/temp/images/icons/middlenav/add.png" alt /></a></li>
-          <li><a href="#" title="Messages" className="tipN"><img src="/temp/images/icons/middlenav/dialogs.png" alt /></a><strong>8</strong></li>
-          <li><a href="#" title="Check statistics" className="tipN"><img src="/temp/images/icons/middlenav/stats.png" alt /></a></li>
+          <li><a href="#" title="Add an article" className="tipN"><img src="/temp/images/icons/middlenav/create.png"  /></a></li>
+          <li><a href="#" title="Upload files" className="tipN"><img src="/temp/images/icons/middlenav/upload.png"  /></a></li>
+          <li><a href="#" title="Add something" className="tipN"><img src="/temp/images/icons/middlenav/add.png"  /></a></li>
+          <li><a href="#" title="Messages" className="tipN"><img src="/temp/images/icons/middlenav/dialogs.png"  /></a><strong>8</strong></li>
+          <li><a href="#" title="Check statistics" className="tipN"><img src="/temp/images/icons/middlenav/stats.png"  /></a></li>
         </ul>
         {/* Chart */}
         <div className="widget chartWrapper">
@@ -54,7 +54,7 @@ const Dashboard = () => {
           <div className="widget grid6">
             <div className="whead"><h6>Table with hidden toolbar</h6></div>
             <div id="dyn" className="hiddenpars">
-              <a className="tOptions" title="Options"><img src="/temp/images/icons/options.html" alt /></a>
+              <a className="tOptions" title="Options"><img src="/temp/images/icons/options.html"  /></a>
               <table cellPadding={0} cellSpacing={0} border={0} className="dTable" id="dynamic">
                 <thead>
                   <tr>
@@ -114,7 +114,7 @@ const Dashboard = () => {
             <table cellPadding={0} cellSpacing={0} width="100%" className="tDefault checkAll tMedia" id="checkAll">
               <thead>
                 <tr>
-                  <td><img src="/temp/images/elements/other/tableArrows.png" alt /></td>
+                  <td><img src="/temp/images/elements/other/tableArrows.png"  /></td>
                   <td width={50}>Image</td>
                   <td className="sortCol"><div>Description<span /></div></td>
                   <td width={130} className="sortCol"><div>Date<span /></div></td>
@@ -136,14 +136,14 @@ const Dashboard = () => {
                     </div>
                     <div className="tPages">
                       <ul className="pages">
-                        <li className="prev"><a href="#" title><span className="icon-arrow-14" /></a></li>
-                        <li><a href="#" title className="active">1</a></li>
-                        <li><a href="#" title>2</a></li>
-                        <li><a href="#" title>3</a></li>
-                        <li><a href="#" title>4</a></li>
+                        <li className="prev"><a href="#" ><span className="icon-arrow-14" /></a></li>
+                        <li><a href="#"  className="active">1</a></li>
+                        <li><a href="#" >2</a></li>
+                        <li><a href="#" >3</a></li>
+                        <li><a href="#" >4</a></li>
                         <li>...</li>
-                        <li><a href="#" title>20</a></li>
-                        <li className="next"><a href="#" title><span className="icon-arrow-17" /></a></li>
+                        <li><a href="#" >20</a></li>
+                        <li className="next"><a href="#" ><span className="icon-arrow-17" /></a></li>
                       </ul>
                     </div>
                   </td>
@@ -152,8 +152,8 @@ const Dashboard = () => {
               <tbody>
                 <tr>
                   <td><input type="checkbox" name="checkRow" /></td>
-                  <td><a href="/temp/images/big.png" title className="lightbox"><img src="/temp/images/live/face3.png" alt /></a></td>
-                  <td className="textL"><a href="#" title>Image1 description</a></td>
+                  <td><a href="/temp/images/big.png"  className="lightbox"><img src="/temp/images/live/face3.png"  /></a></td>
+                  <td className="textL"><a href="#" >Image1 description</a></td>
                   <td>Feb 12, 2012. 12:28</td>
                   <td className="fileInfo"><span><strong>Size:</strong> 215 Kb</span><span><strong>Format:</strong> .jpg</span></td>
                   <td className="tableActs">
@@ -164,8 +164,8 @@ const Dashboard = () => {
                 </tr>
                 <tr>
                   <td><input type="checkbox" name="checkRow" /></td>
-                  <td><a href="/temp/images/big.png" title className="lightbox"><img src="/temp/images/live/face7.png" alt /></a></td>
-                  <td className="textL"><a href="#" title>Image1 description</a></td>
+                  <td><a href="/temp/images/big.png"  className="lightbox"><img src="/temp/images/live/face7.png"  /></a></td>
+                  <td className="textL"><a href="#" >Image1 description</a></td>
                   <td>Feb 12, 2012. 12:28</td>
                   <td className="fileInfo"><span><strong>Size:</strong> 215 Kb</span><span><strong>Format:</strong> .jpg</span></td>
                   <td className="tableActs">
@@ -176,8 +176,8 @@ const Dashboard = () => {
                 </tr>
                 <tr>
                   <td><input type="checkbox" name="checkRow" /></td>
-                  <td><a href="/temp/images/big.png" title className="lightbox"><img src="/temp/images/live/face6.png" alt /></a></td>
-                  <td className="textL"><a href="#" title>Image1 description</a></td>
+                  <td><a href="/temp/images/big.png"  className="lightbox"><img src="/temp/images/live/face6.png"  /></a></td>
+                  <td className="textL"><a href="#" >Image1 description</a></td>
                   <td>Feb 12, 2012. 12:28</td>
                   <td className="fileInfo"><span><strong>Size:</strong> 215 Kb</span><span><strong>Format:</strong> .jpg</span></td>
                   <td className="tableActs">
@@ -188,8 +188,8 @@ const Dashboard = () => {
                 </tr>
                 <tr>
                   <td><input type="checkbox" name="checkRow" /></td>
-                  <td><a href="/temp/images/big.png" title className="lightbox"><img src="/temp/images/live/face5.png" alt /></a></td>
-                  <td className="textL"><a href="#" title>Image1 description</a></td>
+                  <td><a href="/temp/images/big.png"  className="lightbox"><img src="/temp/images/live/face5.png"  /></a></td>
+                  <td className="textL"><a href="#" >Image1 description</a></td>
                   <td>Feb 12, 2012. 12:28</td>
                   <td className="fileInfo"><span><strong>Size:</strong> 215 Kb</span><span><strong>Format:</strong> .jpg</span></td>
                   <td className="tableActs">

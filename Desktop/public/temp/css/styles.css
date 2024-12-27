@@ -2036,33 +2036,6 @@ ul.userNav li a.sidebar {
   background: url(../images/backgrounds/contentTop.png) repeat-x;
 }
 
-.pageTitle {
-  display: block;
-  float: left;
-  color: #626262;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 21px 30px 21px 0;
-  text-transform: uppercase;
-}
-
-.appTitle {
-  display: block;
-  float: left;
-  color: transparent;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 3px 0px 1px 5px;
-  text-transform: uppercase;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* background: linear-gradient(to bottom, #001f3d, #6495ed); */
-  -webkit-background-clip: text; 
-  text-shadow: 
-    1px 1px 2px rgba(0, 0, 0, 0.8), 
-    -1px -1px 2px rgba(255, 255, 255, 0.5);
-}
-
-
 
 
 /* Quick stats */
@@ -2154,7 +2127,7 @@ ul.userNav li a.sidebar {
 
   position: sticky;
   top: 48px;
-  z-index: 9999;
+  z-index: 999;
   box-sizing: border-box;
 }
 
@@ -2475,6 +2448,7 @@ ul.breadcrumbs li ul li a:hover {
 .middleNavS li a > img {
   padding-top: 23px;
 }
+
 
 .middleNavS {
   text-align: center;
@@ -3036,6 +3010,7 @@ ul.breadcrumbs li ul li a:hover {
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
+  text-decoration: none !important;
 }
 .buttonS span,
 .buttonM span,
@@ -3073,6 +3048,7 @@ ul.breadcrumbs li ul li a:hover {
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+  color: white !important;
 }
 
 .bDefault,

@@ -7,7 +7,7 @@ const TitleBar = () => {
     
       <div id="top">
         <div className="wrapper">
-          <a href="index.html"  className="logo logo-annex"><img src="/temp/images/logo.jpg" /></a>
+          <a className="logo logo-annex"><img src="/temp/images/logo.jpg" /></a>
           <div className='appTitle-background'><span className="appTitle">{Config[0].APP_ALLIASE}</span></div>
           {/* Right top nav */}
           <div className="topNav">
