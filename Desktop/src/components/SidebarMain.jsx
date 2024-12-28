@@ -1,33 +1,20 @@
 import React from 'react';
 import SalesAgent from './sidebarmain/SalesAgent';
-import Manager from './sidebarmain/Manager';
 import Admin from './sidebarmain/Admin';
-import Accountant from './sidebarmain/Accountant';
-import HR from './sidebarmain/HR';
-import SkaiTeam from './sidebarmain/SkaiTeam';
+
 
 
 const SidebarMain = () => {
 
   // Simulate role from session
-  const userRole = sessionStorage.getItem('role') || 'SalesAgent';
+  const userRole = sessionStorage.getItem('role') || 'Admin';
 
   const renderSidebar = () => {
     switch (userRole) {
       case 'SalesAgent':
         return <SalesAgent />;
-      case 'Manager':
-        return <Manager />;
       case 'Admin':
         return <Admin />;
-      case 'Accountant':
-        return <Accountant />;
-      case 'HR':
-        return <HR />;
-      case 'SkaiTeam':
-        return <SkaiTeam />;
-      default:
-        return <SalesAgent />;
     }
   };
 

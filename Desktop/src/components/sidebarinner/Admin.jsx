@@ -1,70 +1,27 @@
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import DashboardTab from './AdminTabs/Dashboard';
+import ForumTab from './AdminTabs/Forum';
+import EmptyTab from './AdminTabs/Empty';
 
-
-import React from 'react'
 
 const Admin = () => {
-  return (
-    <>
-      <div className="secNav">
-        <div className="secWrapper">
+  const location = useLocation();
 
-          {/* Client data */}
-          <div className="secTop">
-            <div className="balance">
-              <div className="balInfo">
-                <strong>{Config[0].CLIENT_ALLIASE}</strong>
-                <span>{Config[0].CLIENT_ADDRESS}</span>
-              </div>
-            </div>
-            <a href="#" className="triangle-red" />
-          </div>
+  // Map routes to components
+  const routeGroups = [
+    { paths: ['/admin/dashboard',], component: <DashboardTab /> },
+    { paths: ['/admin/forum',], component: <ForumTab /> },
+    { paths: ['/admin/settings', '/account/profile'], component: <EmptyTab /> },
+  ];
+
+  // Find the matching component for the current route
+  const CurrentTab =
+    routeGroups.find(group => group.paths.includes(location.pathname))?.component ||
+    <p>Tab not found.</p>;
+
+  return <>{CurrentTab}</>;
+};
 
 
-          {/* Tabs container */}
-          <div id="tab-container" className="tab-container">
-            <ul className="iconsLine ic3 etabs">
-              <li><a href="#general" ><span className="icos-fullscreen" /></a></li>
-              <li><a href="#alt1" ><span className="icos-user" /></a></li>
-              <li><a href="#alt2" ><span className="icos-archive" /></a></li>
-            </ul>
-
-            <div className="divider"><span /></div>
-
-            <div id="general">
-              <div className="sidePad">
-                <a href="#" className="sideB bLightBlue">Add new session</a>
-              </div>
-              <div className="divider"><span /></div>
-              <div className="sideUpload">
-                <div className="dropFiles" />
-              </div>
-            </div>
-
-            <div id="alt1">
-              <div className="numStats">
-                <ul>
-                  <li><a href="#" >4248</a><span>visitors</span></li>
-                  <li><a href="#" >748</a><span>orders</span></li>
-                  <li className="last"><a href="#" >357</a><span>reviews</span></li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="alt2">
-              <div className="sideWidget">
-                <div className="formRow">
-                  <label>Control will be here later</label>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="divider"><span /></div>
-        </div>
-      </div>
-    </>
-  )
-}
-
-export default Admin
+export default Admin;

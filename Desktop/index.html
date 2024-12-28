@@ -10,7 +10,7 @@
 
     <link href="/temp/css/styles.css" rel="stylesheet" type="text/css" />
     <link href="/temp/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="/temp/css/bootstrap.min.css" rel="stylesheet" type="text/css">   <!-- version 4.6 -->
+    <link href="/temp/css/bootstrap.css" rel="stylesheet" type="text/css">   <!-- version 4.6 -->
 
 
 
@@ -77,10 +77,33 @@
   </head>
   <body>
 
+    <div class="preloaders">
+      <img src="/temp/images/logo.jpg" class="preloader-logo" />
+    </div>
 
     <div id="root"></div>
 
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const preloader = document.querySelector('.preloaders');
+        preloader.style.opacity = '1'; 
+      });
+  
+      window.addEventListener('load', () => {
+        const preloader = document.querySelector('.preloaders');
+        preloader.style.opacity = '0'; 
+        setTimeout(() => {
+          preloader.style.display = 'none'; 
+        }, 1000);
+      });
+  
+      $(document).ready(function () {
+        $('.select2').select2();
+      });
+  
+    </script>
 
   </body>
 </html>

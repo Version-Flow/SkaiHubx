@@ -9,47 +9,48 @@ const Admin = () => {
 
             <ul className="nav">
                 <li>
-                    <a href="index.html" title className="active">
-                        <img src="/temp/images/icons/mainnav/dashboard.png" alt />
-                        <span>Dashboard</span>
+                    <a href="/admin/dashboard" className="active">
+                        <img src="/temp/images/icons/mainnav/dashboard.png" />
+                        <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="ui.html" >
-                        <img src="/temp/images/icons/mainnav/ui.png" alt />
-                        <span>UI elements</span>
+                    <a href="/admin/forum" >
+                        <img src="/temp/images/icons/mainnav/ui.png" />
+                        <span>Forum</span>
                     </a>
                 </li>
                 <li>
-                    <a href="forms.html" >
+                    <a href="#" >
+                        <img src="/temp/images/icons/mainnav/statistics.png" />
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        <img src="/temp/images/icons/mainnav/tables.png" />
+                        <span>Sales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
                         <img src="/temp/images/icons/mainnav/forms.png" alt />
                         <span>Forms stuff</span>
                     </a>
                 </li>
                 <li>
-                    <a href="messages.html" >
+                    <a href="#" >
                         <img src="/temp/images/icons/mainnav/messages.png" alt />
                         <span>Messages</span>
                     </a>
                 </li>
                 <li>
-                    <a href="statistics.html" >
-                        <img src="/temp/images/icons/mainnav/statistics.png" alt />
-                        <span>Statistics</span>
+                    <a href="/admin/settings" >
+                        <img src="/temp/images/icons/mainnav/other.png" />
+                        <span>More Controls</span>
                     </a>
                 </li>
-                <li>
-                    <a href="tables.html" >
-                        <img src="/temp/images/icons/mainnav/tables.png" alt />
-                        <span>Tables</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="other_calendar.html" >
-                        <img src="/temp/images/icons/mainnav/other.png" alt />
-                        <span>Other pages</span>
-                    </a>
-                </li>
+
             </ul>
 
 

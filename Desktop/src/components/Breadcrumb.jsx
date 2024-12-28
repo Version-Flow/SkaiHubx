@@ -14,7 +14,7 @@ const Breadcrumb = ({ items }) => {
   const lastPart = pathName.substring(pathName.lastIndexOf('/') + 1) || 'Dashboard';
 
   // Simulate role from session
-  const userRole = sessionStorage.getItem('role') || 'SalesAgent';
+  const userRole = sessionStorage.getItem('role') || 'Admin';
 
   const renderControls = () => {
     switch (userRole) {
@@ -22,8 +22,6 @@ const Breadcrumb = ({ items }) => {
         return <SalesAgent />;
       case 'Admin':
         return <Admin />;
-      default:
-        return <SalesAgent />;
     }
   };
 

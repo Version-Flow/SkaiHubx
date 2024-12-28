@@ -5,7 +5,7 @@ let Config = [
       APP_NAME: 'Skai Vision Flow',
       APP_ALLIASE: 'finFlow',
       APP_VERSION: 'Community e2',
-      APP_TITLE: ' - FinFlow | The Best POS, Iventory Manager',
+      APP_TITLE: ' - FinFlow, The Best POS, Iventory Manager',
       BRAND_NAME: 'Skai-Mount',
       CLIENT_NAME: 'KARRAH MALL AND RETAIL CENTER',
       CLIENT_ALLIASE: 'KARRAH MALL',

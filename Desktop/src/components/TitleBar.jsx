@@ -8,7 +8,9 @@ const TitleBar = () => {
       <div id="top">
         <div className="wrapper">
           <a className="logo logo-annex"><img src="/temp/images/logo.jpg" /></a>
-          <div className='appTitle-background'><span className="appTitle">{Config[0].APP_ALLIASE}</span></div>
+          <div className='appTitle-background'>
+            <b className="appTitle">{Config[0].APP_ALLIASE}</b>
+          </div>
           {/* Right top nav */}
           <div className="topNav">
             <ul className="userNav">

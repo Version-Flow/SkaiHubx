@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Config from '../../helpers/config';
 import { useOutletContext } from 'react-router-dom';
 
+
 const StatisitcsDashboard = () => {
 
   const { setPageTitle, setPageIcon, setBreadcrumbItems } = useOutletContext();
@@ -28,7 +29,7 @@ const StatisitcsDashboard = () => {
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
-              <h7 className="modal-title text-truncate" id="modal-title">Modal Title here</h7>
+              <h6 className="modal-title text-truncate" id="modal-title">Modal Title here</h6>
               <button type="button" className="close modal-close" data-bs-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div className="modal-body">
@@ -46,8 +47,7 @@ const StatisitcsDashboard = () => {
               </div>
             </div>
             <div className="modal-footer">
-              <a href="#" className="buttonS bGreen ">Send Request</a>    
-              <a href="#" class="buttonS bLightBlue ">Send</a>             
+              <a href="#" className="buttonS bGreen ">Send Request</a>             
             </div>
           </div>
         </div>
