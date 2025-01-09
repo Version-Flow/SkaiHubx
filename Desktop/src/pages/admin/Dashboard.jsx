@@ -9,7 +9,7 @@ const Dashboard = () => {
   const { setPageTitle, setPageIcon, setBreadcrumbItems } = useOutletContext();
 
   useEffect(() => {
-    const titles = "Sales Dashboard"; const icons = "icon-screen";
+    const titles = "Admin Dashboard"; const icons = "icon-screen";
 
     // Set breadcrumb items dynamically
     // setBreadcrumbItems([

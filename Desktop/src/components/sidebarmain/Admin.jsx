@@ -16,7 +16,7 @@ const Admin = () => {
                 </li>
                 <li>
                     <a href="/admin/forum" >
-                        <img src="/temp/images/icons/mainnav/ui.png" />
+                        <img src="/temp/images/icons/mainnav/messages.png" />
                         <span>Forum</span>
                     </a>
                 </li>
@@ -29,25 +29,25 @@ const Admin = () => {
                 <li>
                     <a href="#" >
                         <img src="/temp/images/icons/mainnav/tables.png" />
-                        <span>Sales</span>
+                        <span>Archive</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" >
                         <img src="/temp/images/icons/mainnav/forms.png" alt />
-                        <span>Forms stuff</span>
+                        <span>Query Writer</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" >
-                        <img src="/temp/images/icons/mainnav/messages.png" alt />
-                        <span>Messages</span>
+                        <img src="/temp/images/icons/mainnav/ui.png" alt />
+                        <span>Users</span>
                     </a>
                 </li>
                 <li>
                     <a href="/admin/settings" >
                         <img src="/temp/images/icons/mainnav/other.png" />
-                        <span>More Controls</span>
+                        <span>Quick Settings</span>
                     </a>
                 </li>
 

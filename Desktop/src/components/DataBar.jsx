@@ -18,27 +18,47 @@ const DataBar = ({ title, icon }) => {
         <ul className="quickStats">
           {role === 'Admin' && (
             <>
+              
               <li>
-                <a href="#" className="blueImg">
-                  <img src="/temp/images/icons/quickstats/plus.png" alt="Plus Icon" />
+                <a href="#" className="greenImg">
+                  <i className="icon-alert" />
                 </a>
                 <div className="floatR">
-                  <strong className="blue">5489</strong>
-                  <span>visits</span>
+                  <strong className="blue">0</strong>
+                  <span>Notification</span>
+                </div>
+              </li>
+              <li>
+                <a href="#" className="greenImg">
+                <i className="icon-chat" />
+                </a>
+                <div className="floatR">
+                  <strong className="blue">0</strong>
+                  <span>Messages</span>
+                </div>
+              </li>
+              <li>
+                <a href="#" className="greenImg">
+                <i className="icon-cart" />
+                </a>
+                <div className="floatR">
+                  <strong className="blue">0</strong>
+                  <span>Low Stock Alert</span>
                 </div>
               </li>
               <li>
                 <a href="#" className="redImg">
-                  <img src="/temp/images/icons/quickstats/user.png" alt="User Icon" />
+                <i className="icon-calendar" />
                 </a>
                 <div className="floatR">
-                  <strong className="blue">4658</strong>
-                  <span>users</span>
+                  <strong className="blue">0</strong>
+                  <span>Expire Alerts</span>
                 </div>
               </li>
             </>
           )}
-          {(role === 'Admin' || role === 'SalesAgent') && (
+
+          {(role === 'SalesAgent') && (
             <li>
               <a href="#" className="greenImg">
                 <img src="/temp/images/icons/quickstats/money.png" alt="Money Icon" />

@@ -2089,8 +2089,12 @@ ul.userNav li a.sidebar {
 .blueImg,
 .redImg,
 .greenImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
   height: 35px;
+  border-radius: 100%;
 }
 .blueImg {
   background: #6e97aa;
@@ -2102,14 +2106,21 @@ ul.userNav li a.sidebar {
   background: #8fae53;
 }
 
-.blueImg img {
-  padding: 11px;
+
+.blueImg i {
+  padding-left: 10px;
+  color: #ffffff !important;
+  font-size: larger;
 }
-.redImg img {
-  padding: 10px 10px;
+.redImg i {
+  padding-left: 10px;
+  color: #ffffff !important;
+  font-size: larger;
 }
-.greenImg img {
-  padding: 9px 13px;
+.greenImg i {
+  padding-left: 10px;
+  color: #ffffff !important;
+  font-size: larger;
 }
 
 /* === Breadcrumbs line === */
